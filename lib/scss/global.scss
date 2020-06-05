@@ -1,0 +1,54 @@
+@import "reset";
+
+body {
+  font-family: DINNextW01, Helvetica Neue, helvetica, arial, sans-serif;
+  background-color: #eaeaea;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+@font-face {
+  font-family: DINNextW01;
+  font-display: swap;
+  src: url(/fonts/din_next_w01_regular.1578107.woff2) format("woff2"),
+    url(/fonts/din_next_w01_regular.9d1e641.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: DINNextW01;
+  font-display: swap;
+  src: url(/fonts/din_next_w01_medium.8ebd074.woff2) format("woff2"),
+    url(/fonts/din_next_w01_medium.f3e8fd4.woff) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: DINNextW01;
+  font-display: swap;
+  src: url(/fonts/din_next_w01_italic.ab0057e.ttf) format("truetype"),
+    url(/fonts/din_next_w01_italic.6e95f67.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+.infoIcon {
+  display: inline-block;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg height='13' width='13' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M-1-1h15v15H-1z'/%3E%3Cpath d='M5.87 3.35h1.26v1.26H5.87zm0 2.52h1.26v3.78H5.87zM6.5.2C3.022.2.2 3.022.2 6.5s2.822 6.3 6.3 6.3 6.3-2.822 6.3-6.3S9.978.2 6.5.2zm0 11.34c-2.778 0-5.04-2.262-5.04-5.04S3.722 1.46 6.5 1.46s5.04 2.262 5.04 5.04-2.262 5.04-5.04 5.04z' fill='%235d656a' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E");
+  width: 13px;
+  height: 13px;
+}
