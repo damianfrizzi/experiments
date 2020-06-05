@@ -8,20 +8,20 @@ export const transactionsColumns: TableColumn<any>[] = [
   {
     Header: () => <>Instrument</>,
     accessor: "instrument",
+    cellStyle: {
+      minWidth: 250,
+    },
   },
   {
     Header: () => <>Transaction</>,
     accessor: "transaction",
   },
   {
-    Header: () => (
-      <>
-        Quantity
-        <br />
-        Amount
-      </>
-    ),
+    Header: () => <>Quantity Amount</>,
     accessor: "quantityamount",
+    cellStyle: {
+      minWidth: 150,
+    },
   },
   {
     Header: () => <>Currency</>,
@@ -40,7 +40,11 @@ export const transactionsColumns: TableColumn<any>[] = [
 export const transactionsData = [
   {
     date: "19.03.2020",
-    instrument: "iShares Core SPI® ETF (CH)",
+    instrument: (
+      <>
+        <span>Vanguard USD Corporate Bond UCITS ETF</span> <i className="infoIcon" />
+      </>
+    ),
     transaction: "dividend",
     quantityamount: "-",
     currency: "CHF",
@@ -49,7 +53,24 @@ export const transactionsData = [
   },
   {
     date: "19.03.2020",
-    instrument: "US Dollar",
+    instrument: (
+      <>
+        <span>iShares Swiss Domestic Government Bond 7-15 (CH)</span> <i className="infoIcon" />
+      </>
+    ),
+    transaction: "dividend",
+    quantityamount: "-",
+    currency: "CHF",
+    price: "4.37",
+    amount: "4.37",
+  },
+  {
+    date: "19.03.2020",
+    instrument: (
+      <>
+        US Dollar <i className="infoIcon" />
+      </>
+    ),
     transaction: "buy",
     quantityamount: "40",
     currency: "CHF",
@@ -58,7 +79,11 @@ export const transactionsData = [
   },
   {
     date: "19.03.2020",
-    instrument: "US Dollar",
+    instrument: (
+      <>
+        US Dollar <i className="infoIcon" />
+      </>
+    ),
     transaction: "buy",
     quantityamount: "2",
     currency: "CHF",

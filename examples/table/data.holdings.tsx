@@ -7,6 +7,7 @@ export const holdingsColumns: TableColumn<any>[] = [
     cellStyle: {
       width: "25vw",
       maxWidth: "25vw",
+      minWidth: 250,
     },
   },
   {
@@ -24,10 +25,16 @@ export const holdingsColumns: TableColumn<any>[] = [
   {
     Header: () => <>Price date</>,
     accessor: "priceDate",
+    cellStyle: {
+      minWidth: 120,
+    },
   },
   {
     Header: () => <>Position value</>,
     accessor: "positionValue",
+    cellStyle: {
+      minWidth: 150,
+    },
   },
   {
     Header: () => <>Percentage</>,

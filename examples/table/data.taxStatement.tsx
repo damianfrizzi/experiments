@@ -4,6 +4,9 @@ export const taxStatementColumns: TableColumn<any>[] = [
   {
     Header: () => <>Exact description of assets</>,
     accessor: "description",
+    cellStyle: {
+      minWidth: 200,
+    },
   },
   {
     Header: () => (
@@ -14,6 +17,9 @@ export const taxStatementColumns: TableColumn<any>[] = [
       </>
     ),
     accessor: "taxValue",
+    cellStyle: {
+      minWidth: 120,
+    },
   },
   {
     Header: () => (
@@ -28,6 +34,9 @@ export const taxStatementColumns: TableColumn<any>[] = [
       </>
     ),
     accessor: "grossIncome",
+    cellStyle: {
+      minWidth: 150,
+    },
   },
   {
     Header: () => (
@@ -41,6 +50,9 @@ export const taxStatementColumns: TableColumn<any>[] = [
         withholding tax
       </>
     ),
+    cellStyle: {
+      minWidth: 150,
+    },
     accessor: "grossIncomeAssets",
   },
 ]
